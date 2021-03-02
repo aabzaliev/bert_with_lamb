@@ -183,14 +183,14 @@ class LAMB(tf.keras.optimizers.Optimizer):
 
     def __init__(
         self,
-        learning_rate = 0.001,
-        beta_1: FloatTensorLike = 0.9,
-        beta_2: FloatTensorLike = 0.999,
-        epsilon: FloatTensorLike = 1e-6,
-        weight_decay_rate: FloatTensorLike = 0.0,
-        exclude_from_weight_decay: Optional[List[str]] = None,
-        exclude_from_layer_adaptation: Optional[List[str]] = None,
-        name: str = "LAMB",
+        learning_rate=0.001,
+        beta_1=0.9,
+        beta_2=0.999,
+        epsilon=1e-6,
+        weight_decay_rate=0.0,
+        exclude_from_weight_decay=None,
+        exclude_from_layer_adaptation=None,
+        name="LAMB",
         **kwargs,
     ):
         """Construct a new LAMB optimizer.
