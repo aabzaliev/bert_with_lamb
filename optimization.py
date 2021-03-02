@@ -183,7 +183,7 @@ class LAMB(tf.keras.optimizers.Optimizer):
 
     def __init__(
         self,
-        learning_rate: Union[FloatTensorLike, Callable] = 0.001,
+        learning_rate = 0.001,
         beta_1: FloatTensorLike = 0.9,
         beta_2: FloatTensorLike = 0.999,
         epsilon: FloatTensorLike = 1e-6,
