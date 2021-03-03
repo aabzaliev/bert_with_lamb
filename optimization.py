@@ -175,7 +175,7 @@ class AdamWeightDecayOptimizer(tf.train.Optimizer):
 
 
 #
-class LAMB(tf.keras.optimizers.Optimizer):
+class LAMB(tf.train.Optimizer):
     """Optimizer that implements the Layer-wise Adaptive Moments (LAMB).
     See paper [Large Batch Optimization for Deep Learning: Training BERT
     in 76 minutes](https://arxiv.org/abs/1904.00962).
@@ -190,7 +190,7 @@ class LAMB(tf.keras.optimizers.Optimizer):
         weight_decay_rate=0.0,
         exclude_from_weight_decay=None,
         exclude_from_layer_adaptation=None,
-        name="LAMB",
+        name="LAMBOptimizer",
         **kwargs,
     ):
         """Construct a new LAMB optimizer.
