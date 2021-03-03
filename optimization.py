@@ -219,7 +219,7 @@ class LAMB(tf.train.Optimizer):
               decay of learning rate. `lr` is included for backward
               compatibility, recommended to use `learning_rate` instead.
         """
-        super().__init__(name, **kwargs)
+        super().__init__(False, name)
 
         # Just adding the square of the weights to the loss function is *not*
         # the correct way of using L2 regularization/weight decay with Adam,
